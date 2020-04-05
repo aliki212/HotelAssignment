@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+  <section>
+    <button id="btn13"> Φερε περιεχομενο</button>     
+    <button id="btn3"> Φερε μονο Id</button>
+    <h3> List of Hotels</h3>
+    <div id="hotels1">
+<ul>
+  <li>
+    <div id="hotelName">
+    </div>
+    <div id="city">
+    </div>
+    </div>
+    <div id="response">
+      <pre></pre>
+    </div>
+  </section>
+</main>
+
+          <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+   
+    <script>
+        $(document).ready(function() {
+
+            $("#btn13").click(function() {
+                  fetch("./data.json")
+                  .then(function(resp){
+                    return resp.json();
+                  })
+                  .then(function(data){
+                    
+                    console.log("this is the type of data:");
+                    console.log(typeof data);
+                    console.log("This is the roomtypes:");
+                    console.log(data[0].roomtypes);
+                    console.log("This is the type of roomtypes:");
+                    console.log(typeof data[0].roomtypes);
+                    console.log("this is the roomtypes[0]");
+                    console.log(data[0].roomtypes[0]);
+                    console.log("this is the type of roomtypes[0]");
+                    console.log(typeof data[0].roomtypes[0]);
+                  });
+            });//end button 13
+
+        });//END DOC READY
+    </script>
+</body>
+</html>

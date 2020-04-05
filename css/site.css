@@ -1,0 +1,218 @@
+/* Option for slider height */
+/* .img-height1 {
+    height: 500px;
+} */
+/* NavBar */
+.hotelnav {
+    background-color: royalblue;
+}
+    /* color of links */
+.navbar-light .navbar-nav .nav-link { 
+    color: rgba(115, 5, 150,.5); /* #730596 */
+}
+    /* background color */
+.bg-light {
+    background-color: #f8f9fa!important;
+}
+    /* Nav toggler button */
+.navbar-light .navbar-toggler {
+    color: rgba(115, 5, 150,.5);
+    border-color: rgba(115, 5, 150,.1);
+}
+
+    /* Active links */
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(0115, 5, 150,.9);
+}
+    /* Hover Links */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(32, 70, 183,.7);
+}
+    /* Nav dropdowns */
+.dropdown-item {
+    color: rgba(0115, 5, 150,.9);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color:  rgba(32, 70, 183,.7);
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+/* Search custom id // also form */
+#hotel-btn {
+    color: #730596;
+    border-color: #730596;
+}
+#hotel-btn:hover {
+    color:#f8f9fa;
+    background-color: #730596;
+}
+#hotel-btn.focus, #hotel-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(115, 5, 150,.5);
+}
+#hotel-btn-1 {
+    border-radius: 0;
+    color:#f8f9fa;
+    background-color: #730596;
+    border-color:#730596;
+}
+#hotel-btn-1:hover {
+    color: #730596;
+    border-color: #730596;
+    background-color: #f8f9fa;
+}
+.hotelformcontrol {
+    border-radius: 0;
+}
+.hotelformcontrol:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #730596;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(115, 5, 150,.3);
+}
+/* searchsection */
+
+.searchsection {
+    background-color: #2046b7;
+}
+.checkdates { 
+    text-align: center;
+}
+.checkdates .col-sm  {
+    border-bottom: 1px #FF7150 solid;
+    background : white;
+    padding-right: 0;
+    padding-left: 3px;
+}
+.col_checkin {
+    border-left:10px solid #730596;
+}
+.col_checkout {
+    border-left:10px solid #FF7150;
+    margin-left: 5px;;
+}
+.col_check3 {
+    margin-left: 5px;;
+}
+.col_slider{
+    margin:0px;
+    padding-left: 10px;
+    padding-right:0;
+}
+.roomOptions{
+    color: #f8f9fa;
+    
+}
+/* .roomOptions .col-sm {
+    border-right: 1px white solid;
+} */
+.col_roomOptionsType {
+ padding-left:25px;
+
+
+}
+.col_locationFilters{
+    padding:0;
+    margin:0;
+}
+.locationFilters{
+/* padding-right: 20px; */
+font-size:0.7em;
+padding:0;
+margin:0;
+}
+/* Price slider */
+
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background:  #730596;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #d3d3d3;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #d3d3d3;
+    cursor: pointer;
+  }
+#demo {
+    text-align: right;
+    padding-left:5px;
+}
+#rightP {
+float: right;
+}
+.priceslider {
+    height:50px;
+    margin-bottom: 10px;;
+}
+
+/* List of Hotels */
+.listofHotels {
+    background: #d3d3d3;
+}
+.row_listofHotels {
+padding-top:20px;
+}
+.hotelmap {
+position: relative;
+width: 150px;
+height: 50px;
+overflow: hidden;
+}
+.viewMap {
+    background: #f8f9fa;
+    text-align: center;
+    /* width:100%;
+    height: 100%; */
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 10px;
+    position: absolute; 
+    
+}
+.infoFont{
+    padding:0;
+    margin:0;
+}
+.custom-select option {
+    color: white;
+    background:#FF7150;
+}
+
+.custom-select:focus {
+    border-color: #FF7150;
+    box-shadow: 0 0 0 0.2rem rgba(255, 113, 80,.25);
+}
+
+
+.custom-select.is-valid, .was-validated .custom-select:valid{border-color:#FF7150;  background: #FF7150;} .custom-select.is-valid:focus,.was-validated .custom-select:valid:focus {border-color:#FF7150;}
+
+/* main paige css */
+    /* header */
+header {
+    background-color:  rgba(32, 70, 183,.7);
+}

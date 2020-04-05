@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+  <section>
+    <button id="btn13"> Φερε περιεχομενο</button>     
+    <button id="btn3"> Φερε μονο Id</button>
+    <h3> List of Hotels</h3>
+    <div id="hotels1">
+<ul>
+  <li>
+    <div id="hotelName">
+    </div>
+    <div id="city">
+    </div>
+    </div>
+    <div id="response">
+      <pre></pre>
+    </div>
+  </section>
+</main>
+
+          <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+   
+    <script>
+        $(document).ready(function() {
+
+            $("#btn13").click(function() {
+                  fetch("./data.json")
+                  .then(function(resp){
+                    return resp.json();
+                  })
+                  .then(function(data){
+                    
+                  var arrayEntries = Array.from(data[1].entries);
+                        
+                for (var i = 0; i < 3 ; i++)//arrayEntries.length; i++)
+                {
+                        console.log("This is the entries[0].hotelName");
+                //     console.log(arrayEntries[i].hotelName);
+                //      //console.log("1this is the entries[0].rating");
+                //     console.log(arrayEntries[i].rating);
+                //    // console.log("2this is the entries[0].city");
+                //     console.log(arrayEntries[i].city);
+                //     //console.log("3this is the entries[0].thumbnail");
+                //     console.log(arrayEntries[i].thumbnail);
+                //     //console.log("4this is the entries[0].guestrating");
+                //     console.log(arrayEntries[i].guestrating);
+                //     //console.log("5this is the entries[0].ratings[0].no");
+                //     console.log(arrayEntries[i].ratings[0].no);
+                //     //console.log("6this is the entries[0].ratings[0].text");
+                //     console.log(arrayEntries[i].ratings[0].text);
+                //     //console.log("7this is the entries[0].ratings[0].mapurl");
+                //     console.log(arrayEntries[i].mapurl);
+                //     //console.log("8this is the entries[0].filters[0]");
+                //     console.log(arrayEntries[i].filters[0]);
+                //     //console.log("9this is the entries[0].filters objects:");
+                    var x = arrayEntries[i];
+                    for (var j = 0; j< x.filters.length; j++)
+                    {console.log(x.filters[j].name)};
+                //     //console.log("10this is the entries[0].price");
+                //      console.log(arrayEntries[i].price);
+                }
+            
+
+                    document.getElementById("hotelName").innerHTML =
+                    data[1].entries[0].hotelName;
+                    // obj.employees[1].firstName + " " + obj.employees[1].lastName;
+                  });
+            });//end button 13
+
+
+        });//END DOC READY
+    </script>
+</body>
+</html>

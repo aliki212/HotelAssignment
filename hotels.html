@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=initial-scale=1.0"> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="./img/logo/LogoT40H.png"  height="40" alt="">
+    </a>
+  </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hotels.html">Hotels</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button id="hotel-btn"  class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- End of Navigation -->
+<main class="container-md">
+  <section class="px-3 searchsection">
+  <div class="d-flex py-2">     <!-- m = margin, y = y-axis for top & bottom -->
+    <!-- <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" /> -->
+    <input class="form-control hotelformcontrol" type="search" placeholder="&#xF002; Search" style="font-family:sans-serif, FontAwesome" aria-label="Search">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+     <!-- m = margin, r = right -->
+    <button id="hotel-btn-1"  class="btn btn-outline-success my-sm-0" type="submit">Search!</button>
+  </div>
+ 
+<div class="container">
+  <div class="row checkdates">
+    <div class="col-sm py-2 col_checkin">
+      <div class="calendar-button-wrapper">
+        <!-- <button class="dealform-button js-dealform-button-calendar" type="button"> -->
+          <span class="flex">
+              <span class="icon">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </span>
+              <span class="dealform-button_text-wrapper">
+                <span class="dealform-button_head">Check in</span>
+                <time class="dealform-button_label" datetime="2020-04-24">-- / -- / --</time>
+              </span>
+          </span>
+        <!-- </button> -->
+        <span class="toggledateicon">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+    <div class="col-sm py-2 col_checkout">
+      <div class="calendar-button-wrapper">
+        <!-- <button class="dealform-button js-dealform-button-calendar" type="button"> -->
+          <span class="flex">
+              <span class="icon">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                
+              </span>
+              <span class="dealform-button_text-wrapper">
+                <span class="dealform-button_head">Check out</span>
+                <time class="dealform-button_label" datetime="2020-04-24">-- / -- / --</time>
+              </span>
+          </span>
+        <!-- </button> -->
+        <span class="toggledateicon">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+    <div class="col-sm py-2 col_check3">
+      <div class="calendar-button-wrapper">
+        <!-- <button class="dealform-button js-dealform-button-calendar" type="button"> -->
+          <span class="flex">
+              <span class="icon">
+                <i class="fa fa-users"aria-hidden="true"></i>
+                
+              </span>
+              <span class="dealform-button_text-wrapper">
+                <span class="dealform-button_head">Family Rooms</span>
+                
+              </span>
+          </span>
+        <!-- </button> -->
+       
+      </div>
+    </div>
+  </div>
+
+<div class="row roomOptions">
+  <div class="col-sm col_slider">
+    <div class="priceslider">
+      <span>Price <span id="rightP">Max $<span id="demo"></span></span></span>
+      <input type="range" min="1" max="6000" value="6000" class="slider" id="myRange">
+    </div>
+  </div>
+  <div class="col-sm col_roomOptionsType">
+    <div class="row roomOptionsType">
+        <div class="col-sm">
+          <div class="row ">
+            Property Type
+            <div class="col-sm">
+              All
+            </div>
+            <div class="col-sm">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+       <div class="col-sm">
+          <div class=row>
+            Guest Rating
+            <div class="col-sm">
+              All
+            </div>
+            <div class="col-sm">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm col_locationFilters">
+    <div class="row locationFilters">
+      <div class="col-sm">
+        <div class="row ">
+         Hotel Location
+          <div class="col-sm">
+            All
+          </div>
+          <div class="col-sm">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+     <div class="col-sm">
+        <div class=row>
+          More Filters
+          <div class=row>
+          <div class="col-sm">
+            All
+          </div>
+          <div class="col-sm">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+        </div>
+        </div>
+     </div>
+   </div>
+  </div>
+</div>
+</div>
+
+  </section>
+  <div class="container listofHotels">
+    <div class="row row_listofHotels">
+      <div class="col-4 hotelmap">
+          <div class="viewMap">View Map</div>
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 40px">
+              <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+            <!--Google Maps-->
+      </div>
+      <div class="col-2">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      </div>
+      <div class="col-6 hotelsortby">
+        <div class="input-group ">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-info-circle mr-1" aria-hidden="true"></i>Sort By</label>
+          </div>
+          <select class="custom-select dropdown-danger" id="inputGroupSelect01"> 
+            <option selected> Our Recomendations</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <span class="infoFont">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </span>
+         
+      </div>
+     
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+  
+  <section>
+    <button id="btn13"> btn13</button>  
+    <h3> List of Hotels</h3>
+    <div id="hotels1">
+<ul>
+  <li>
+    <div id="hotelName">
+    </div>
+    <div id="city">
+    </div>
+    </div>
+    <div id="response">
+      <pre></pre>
+    </div>
+  </section>
+</main>
+
+          <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+} 
+  </script>
+</body>
+</html>
